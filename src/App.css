@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+  background: #4D6286;
+}
+
+.App {
+  background: #141A32;
+  width: 100%;
+  padding: 5px 0;
+  overflow: hidden;
+  color: #ECEDEF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table {
+  display: block;
+  padding: 15px 16px;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  float: right;
+}
+
+.search input {
+  width: 180px;
+  height: 32px;
+  background: #080F28;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-left: 5px;
+  /* box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset; */
+}
+
+.search input {
+  text-indent: 32px;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.error {
+  height: 160px;
+  width: 80%;
+  border: 5px solid #A94442;
+  color: #A94442;
+  font-weight: 700;
+  border-radius: 10px;
+  background: #F2DEDE;
+  margin: 20px auto;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.search-by {
+  background: #1E2747;
+  color: #DBDBDB;
+  padding: 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 48%;
+  max-width: 200px;
+}
+
+.search-by.active {
+  background: #007AFF;
+  color: #F6F6F6;
+  transition: .1s;
+}
+
+.btn-div {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media query */
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding-top: 20px;
+  }
+  .App {
+    width: 360px;
+    height: 100%;
+    overflow: auto;
+  }
+  .smartphone {
+    position: relative;
+    width: 392px;
+    height: 620px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+  .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    padding-top: 5%;
+  }
+}

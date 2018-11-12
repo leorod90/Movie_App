@@ -1,0 +1,59 @@
+.movie-body {
+    /* background: #132555; */
+    height: 230px;
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.movie-background {
+    height: 75%;
+    width: 100%;
+    background: #1E2747;
+    position: absolute;
+    bottom: 0;
+}
+
+.poster-div {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+
+.title-div {
+    color: #C0CAD8;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    right: -10px;
+    padding: 10px;
+}
+
+.title {
+    font-weight: 600;
+    padding: 3px;
+}
+
+.rating {
+    color: #D59A0D;
+    padding: 3px;
+}
+
+.date, .genre {
+    color: #737F96;
+    font-size: .8rem;
+    padding: 3px;
+}
+
+.fa-play-circle {
+    color: #007AFF;
+    position: absolute;
+    right: 16px;
+    bottom: 8px;
+    font-size: 30px;
+}
+
+.fa-play-circle:hover {
+    cursor: pointer;
+    color: red;
+}

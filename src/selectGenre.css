@@ -1,0 +1,27 @@
+.genreContain{
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    height: 80vh;
+    overflow: hidden;
+    border-bottom: 5px;
+}
+
+.genreBtn{
+    background: #1E2747;
+    color: #DBDBDB;
+    text-align: center;
+    padding: 15px 0;
+    max-width: 150px;
+    width: 30%;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 1.5%; 
+}
+/* media query */
+@media only screen and (min-width: 600px) {
+    .genreContain{
+        height: auto;
+    }
+}
